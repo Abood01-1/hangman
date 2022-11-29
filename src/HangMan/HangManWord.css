@@ -1,0 +1,32 @@
+.letter-container {
+  max-width: 100%;
+  font-size: 4em;
+  display: flex;
+  gap: 0.5em;
+  font-family: monospace;
+  font-weight: bold;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+@media (max-width: 640px) {
+  .letter {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .letter {
+    font-size: 20px;
+  }
+  .letter-container {
+    column-gap: 0.4em;
+  }
+}
+
+@media (max-width: 380px) {
+  .letter {
+    font-size: 15px;
+  }
+}

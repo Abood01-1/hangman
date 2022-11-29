@@ -1,0 +1,51 @@
+{
+  "programming": [
+    "c",
+    "frontend",
+    "data base",
+    "program",
+    "design",
+    "html",
+    "compilers",
+    "developers",
+    "object oriented",
+    "local host"
+  ],
+  "sports": [
+    "football",
+    "messi",
+    "real madrid",
+    "points",
+    "world cup",
+    "staduim",
+    "defender",
+    "marathon",
+    "basketball",
+    "swimming",
+    "goal"
+  ],
+  "animals": [
+    "cow",
+    "frog",
+    "lion",
+    "yak",
+    "turtle",
+    "own",
+    "kangaroo",
+    "eagle",
+    "zebra",
+    "alligator"
+  ],
+  "transportation": [
+    "bus",
+    "metro",
+    "bicycle",
+    "car",
+    "airplane",
+    "airship",
+    "motorcycle",
+    "walk",
+    "scooter",
+    "airwheel"
+  ]
+}

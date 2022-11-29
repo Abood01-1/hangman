@@ -1,0 +1,131 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hangman-draw {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.base {
+  width: 200px;
+  height: 4px;
+  background-color: #333;
+}
+
+.stick {
+  margin-left: 100px;
+  height: 300px;
+  width: 4px;
+  background-color: #333;
+}
+
+.right-stick {
+  width: 150px;
+  height: 4px;
+  background-color: #333;
+  margin-left: 100px;
+}
+
+.short-stick {
+  width: 4px;
+  position: absolute;
+  height: 50px;
+  background-color: #333;
+  margin-left: 250px;
+}
+
+.head {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 6px solid #333;
+  border-radius: 50%;
+  top: 15%;
+  left: calc(100% - 23px);
+}
+.body {
+  position: absolute;
+  width: 6px;
+  height: 100px;
+  background: #333;
+  top: 30%;
+  left: 100%;
+}
+
+.right-arm,
+.left-leg {
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #333;
+  top: 35%;
+  right: calc(0% - 2px);
+  transform: rotate(-45deg);
+  transform-origin: right;
+}
+.left-leg {
+  top: 60%;
+  right: calc(0% - 2px);
+}
+
+.left-arm,
+.right-leg {
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #333;
+  top: 35%;
+  left: calc(100% + 4px);
+  transform: rotate(45deg);
+  transform-origin: left;
+}
+.right-leg {
+  top: 60%;
+}
+
+@media (max-width: 500px) {
+  .hangman-draw {
+    margin-bottom: 0;
+    margin-top: -25px;
+    transform: scale(0.8);
+  }
+  .stick {
+    height: 250px;
+    margin-left: 75px;
+  }
+  .base {
+    width: 150px;
+  }
+  .right-stick {
+    width: 100px;
+    margin-left: 75px;
+  }
+  .short-stick {
+    margin-left: 175px;
+  }
+  .head {
+    top: calc(20% - 4px);
+  }
+  .body {
+    top: calc(35% + 4px);
+  }
+  .left-arm,
+  .right-arm {
+    top: 40%;
+  }
+  .right-leg,
+  .left-leg {
+    top: calc(70% + 6px);
+  }
+}
+
+@media (max-width: 400px) {
+  .hangman-draw {
+    transform: scale(0.8);
+  }
+}
